@@ -12,14 +12,14 @@ const Libro = sequelizeBiblioteca.define('Libro',{
         type: DataTypes.STRING,
         allowNull: false,
     },
-    añoPublicacion:{
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
     disponibilidad:{
         type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue:true,
+    },
+    añoPublicacion:{
+        type: DataTypes.INTEGER,
+        allowNull: false
     },
 
 },{
