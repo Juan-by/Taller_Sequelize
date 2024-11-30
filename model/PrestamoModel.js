@@ -14,8 +14,8 @@ const Prestamo = sequelizeBiblioteca.define('Prestamo',{
         allowNull: true,
     }
 },{
-    timestamps: true,
-    tableName:'prestamos',
+    timestamps: false,
+    tableName:'prestamo',
 });
 
 module.exports = Prestamo;

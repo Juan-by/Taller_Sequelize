@@ -4,7 +4,7 @@ const UsuarioController = {
     crearUsuario: async (req,res) => {
         try{
             const nuevoUsuario = await UsuarioService.crearUsuario(req.body);
-            res.status.json(nuevoUsuario);             
+            res.json({nuevoUsuario});             
         }catch(error){
            res.json({error: error.message})
         }

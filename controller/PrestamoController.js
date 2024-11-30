@@ -4,15 +4,15 @@ const PrestamoController = {
   crearPrestamo: async (req, res) => {
     try {
       const nuevoPrestamo = await PrestamoService.crearPrestamo(req.body);
-      res.json(nuevoPrestamo);
-    } catch (error) {
+      res.json({nuevoPrestamo});
+    } catch (e) {
       
     }
   },
   obtenerPrestamos: async (req, res) => {
     try {
       const prestamos = await PrestamoService.obtenerPrestamos();
-      res.json(prestamos);
+      res.json({prestamos});
     } catch (e) {
       
     }

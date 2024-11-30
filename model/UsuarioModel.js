@@ -19,7 +19,7 @@ const Usuario = sequelizeBiblioteca.define('Usuario',{
     },
 },{
     timestamps: false,
-    tableName:'usuarios',
+    tableName:'usuario',
 });
 
 module.exports = Usuario;
